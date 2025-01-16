@@ -14,11 +14,21 @@ body {
   }
   
   /* Style the article and aside sections */
-  article {
-    flex: 2; /* Take up 2/3 of the width */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 10px;
-    border-right: 1px solid #ddd; /* Optional: Add a visual separator */
+ /* Article Styling */
+article {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Light border */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  article h1 {
+    color: #2c3e50; /* Dark blue */
+  }
+  
+  article p {
+    line-height: 1.6; /* Better readability */
   }
   
   aside {
@@ -33,5 +43,40 @@ body {
     text-align: center;
     background-color: #f4f4f4; /* Optional: Add background color for clarity */
     border: 1px solid #ddd; /* Optional: Add border for clarity */
+  }
+  /* Logo Styling */
+.logo {
+    font-size: 2rem; /* Makes the logo bigger */
+    margin-right: 1rem; /* Adds spacing between the logo and other items */
+    color: #3498db; /* Changes the logo color */
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd; /* Subtle border */
+  }
+  
+  header ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header ul li {
+    margin-right: 15px;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold;
+  }
+  
+  header ul li a:hover {
+    color: #007bff; /* Hover effect */
   }
   
