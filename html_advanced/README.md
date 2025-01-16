@@ -23,6 +23,7 @@ In this project, we will create a semantic HTML structure based on a designer fi
 3. Avoid adding CSS or styles; focus solely on semantic HTML.
 
 ## Directory Structure
+html_advanced/ ├── README.md ├── index.html
 
 ## Learning Outcomes
 - Mastery of semantic HTML elements.
