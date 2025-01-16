@@ -1,0 +1,37 @@
+/* Apply Flexbox to the body */
+body {
+    display: flex;
+    flex-direction: column; /* Stack <header>, <main>, and <footer> vertically */
+    margin: 0; /* Remove default margins for a cleaner layout */
+    height: 100vh; /* Ensure the body takes the full viewport height */
+  }
+  
+  /* Apply Flexbox to the main container */
+  main {
+    display: flex;
+    flex-direction: row; /* Position <article> and <aside> side-by-side */
+    flex: auto; /* Allow <main> to grow automatically */
+  }
+  
+  /* Style the article and aside sections */
+  article {
+    flex: 2; /* Take up 2/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border-right: 1px solid #ddd; /* Optional: Add a visual separator */
+  }
+  
+  aside {
+    flex: 1; /* Take up 1/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+  }
+  
+  /* Style the header and footer */
+  header, footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4; /* Optional: Add background color for clarity */
+    border: 1px solid #ddd; /* Optional: Add border for clarity */
+  }
+  
