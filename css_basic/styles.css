@@ -1,82 +1,74 @@
-/* Apply Flexbox to the body */
-body {
-    display: flex;
-    flex-direction: column; /* Stack <header>, <main>, and <footer> vertically */
-    margin: 0; /* Remove default margins for a cleaner layout */
-    height: 100vh; /* Ensure the body takes the full viewport height */
-  }
-  
-  /* Apply Flexbox to the main container */
-  main {
-    display: flex;
-    flex-direction: row; /* Position <article> and <aside> side-by-side */
-    flex: auto; /* Allow <main> to grow automatically */
-  }
-  
-  /* Style the article and aside sections */
- /* Article Styling */
-article {
-    background-color: #ffffff; /* White background */
-    border: 1px solid #ccc; /* Light border */
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-  }
-  
-  article h1 {
-    color: #2c3e50; /* Dark blue */
-  }
-  
-  article p {
-    line-height: 1.6; /* Better readability */
-  }
-  
-  aside {
-    flex: 1; /* Take up 1/3 of the width */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 10px;
-  }
-  
-  /* Style the header and footer */
-  header, footer {
-    padding: 10px;
-    text-align: center;
-    background-color: #f4f4f4; /* Optional: Add background color for clarity */
-    border: 1px solid #ddd; /* Optional: Add border for clarity */
-  }
-  /* Logo Styling */
-.logo {
-    font-size: 2rem; /* Makes the logo bigger */
-    margin-right: 1rem; /* Adds spacing between the logo and other items */
-    color: #3498db; /* Changes the logo color */
-  }
-  
-  /* Header Styling */
-  header {
-    background-color: #f4f4f4; /* Light gray background */
-    padding: 10px 20px;
-    border-bottom: 2px solid #ddd; /* Subtle border */
-  }
-  
-  header ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
+* {
     margin: 0;
     padding: 0;
-  }
-  
-  header ul li {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+header,
+footer {
+    flex: none;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+body > * {
+    margin: 5px;
+}
+
+code {
+    padding: 2px 4px;
+    border-radius: 8px;
+    background: #f9f2f4;
+    color: #c7254e;
+}
+
+.logo {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
     margin-right: 15px;
-  }
-  
-  header ul li a {
+}
+
+header a {
     text-decoration: none;
-    color: #333; /* Text color */
+    color: inherit;
     font-weight: bold;
-  }
-  
-  header ul li a:hover {
-    color: #007bff; /* Hover effect */
-  }
-  
+}
